@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn the Alphabet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .alphabet {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .letter {
+            text-align: center;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .letter img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .letter:hover img {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav {
+            margin-top: 20px;
+        }
+
+        .nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #4CAF50;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #45a049;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Learn the Alphabet in English</h1>
+        <div class="alphabet">
+            <div class="letter" onclick="playAudio('a')">
+                <img src="images/a.png.jpeg" alt="A">
+            </div>
+            <div class="letter" onclick="playAudio('b')">
+                <img src="images/b.png.jpeg" alt="B">
+            </div>
+            <div class="letter" onclick="playAudio('c')">
+                <img src="images/c.png.jpeg" alt="C">
+            </div>
+            <div class="letter" onclick="playAudio('d')">
+                <img src="images/d.png.jpeg" alt="D">
+            </div>
+            <div class="letter" onclick="playAudio('e')">
+                <img src="images/e.png.jpeg" alt="E">
+            </div>
+            <div class="letter" onclick="playAudio('f')">
+                <img src="images/f.png.jpeg" alt="F">
+            </div>
+            <div class="letter" onclick="playAudio('g')">
+                <img src="images/g.png.jpeg" alt="G">
+            </div>
+            <div class="letter" onclick="playAudio('h')">
+                <img src="images/h.png.jpeg" alt="H">
+            </div>
+            <div class="letter" onclick="playAudio('i')">
+                <img src="images/i.png.jpeg" alt="I">
+            </div>
+            <div class="letter" onclick="playAudio('j')">
+                <img src="images/j.png.jpeg" alt="J">
+            </div>
+            <div class="letter" onclick="playAudio('k')">
+                <img src="images/k.png.jpeg" alt="K">
+            </div>
+            <div class="letter" onclick="playAudio('l')">
+                <img src="images/l.png.jpeg" alt="L">
+            </div>
+            <div class="letter" onclick="playAudio('m')">
+                <img src="images/m.png.jpeg" alt="M">
+            </div>
+            <div class="letter" onclick="playAudio('n')">
+                <img src="images/n.png.jpeg" alt="N">
+            </div>
+            <div class="letter" onclick="playAudio('o')">
+                <img src="images/o.png.jpeg" alt="O">
+            </div>
+            <div class="letter" onclick="playAudio('p')">
+                <img src="images/p.png.jpeg" alt="P">
+            </div>
+            <div class="letter" onclick="playAudio('q')">
+                <img src="images/q.png.jpeg" alt="Q">
+            </div>
+            <div class="letter" onclick="playAudio('r')">
+                <img src="images/r.png.jpeg" alt="R">
+            </div>
+            <div class="letter" onclick="playAudio('s')">
+                <img src="images/s.png.jpeg" alt="S">
+            </div>
+            <div class="letter" onclick="playAudio('t')">
+                <img src="images/t.png.jpeg" alt="T">
+            </div>
+            <div class="letter" onclick="playAudio('u')">
+                <img src="images/u.png.jpeg" alt="U">
+            </div>
+            <div class="letter" onclick="playAudio('v')">
+                <img src="images/v.png.jpeg" alt="V">
+            </div>
+            <div class="letter" onclick="playAudio('w')">
+                <img src="images/w.png.jpeg" alt="W">
+            </div>
+            <div class="letter" onclick="playAudio('x')">
+                <img src="images/x.png.jpeg" alt="X">
+            </div>
+            <div class="letter" onclick="playAudio('y')">
+                <img src="images/y.png.jpeg" alt="Y">
+            </div>
+            <div class="letter" onclick="playAudio('z')">
+                <img src="images/z.png.jpeg" alt="Z">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function playAudio(letter) {
+            var audio = new Audio('audio/' + letter + '.mp3.mp3');
+            audio.play();
+        }
+    </script>
+</body>
+
+</html>
